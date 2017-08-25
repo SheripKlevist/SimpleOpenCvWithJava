@@ -1,4 +1,3 @@
-package com.sherip.camera;
 
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.WritableImage;
