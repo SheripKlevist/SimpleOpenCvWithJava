@@ -15,7 +15,7 @@ import org.opencv.videoio.VideoCapture;
 
 public class VideoApp extends Application{
 
-    private ImageView viewPoint=new ImageView();
+    private ImageView viewPoint=new ImageView();//the camera output view point
     private boolean capturing=false;
 
     public static void main(String args[])
@@ -60,6 +60,7 @@ public class VideoApp extends Application{
             System.exit(0);
         });
 
+        //thread for a live feed from the default camera
         Thread p=new Thread(new Runnable() {
             @Override
             public void run() {
